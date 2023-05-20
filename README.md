@@ -27,26 +27,28 @@ which can be done with `jq`:
 
 ## Prettier
 
-Install the config:
+Create `.prettierrc` file with the following content:
 
-```bash
-yarn add -D https://gitpkg.now.sh/jurajmatus/eslint-configs/packages/prettier-common
-```
-
-Create `prettier.config.js`:
-
-```js
-module.exports = {
-  ...require('prettier-common'),
-};
+```json
+{
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 80,
+  "trailingComma": "es5",
+  "arrowParens": "avoid"
+}
 ```
 
 which can be done as follows:
 
 ```bash
-cat <<END > prettier.config.js
-module.exports = {
-  ...require('prettier-common'),
-};
+cat <<END > .prettierrc
+{
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 80,
+  "trailingComma": "es5",
+  "arrowParens": "avoid"
+}
 END
 ```
