@@ -1,2 +1,4 @@
-# eslint-configs
+# ESlint configs
+
 Various ESLint configs
+
