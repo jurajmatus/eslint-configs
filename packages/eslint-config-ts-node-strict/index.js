@@ -7,7 +7,6 @@ module.exports = {
   },
   plugins: ['prettier', 'import', 'jest', '@typescript-eslint'],
   env: {
-    'jest/globals': true,
     node: true,
     es6: true,
   },
