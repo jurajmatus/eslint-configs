@@ -2,7 +2,7 @@
   "name": "eslint-config-ts-node-strict",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".eslintrc",
   "scripts": {},
   "author": "Juraj Matuš",
   "license": "ISC",
