@@ -27,28 +27,9 @@ which can be done with `jq`:
 
 ## Prettier
 
-Create `.prettierrc` file with the following content:
+Create `.prettierrc.js`:
 
-```json
-{
-  "semi": true,
-  "singleQuote": true,
-  "printWidth": 80,
-  "trailingComma": "es5",
-  "arrowParens": "avoid"
-}
-```
-
-which can be done as follows:
-
-```bash
-cat <<END > .prettierrc
-{
-  "semi": true,
-  "singleQuote": true,
-  "printWidth": 80,
-  "trailingComma": "es5",
-  "arrowParens": "avoid"
-}
-END
+```js
+const prettierBase = require("eslint-config-ts-node-strict");
+module.exports = prettierBase;
 ```
