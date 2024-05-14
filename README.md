@@ -30,6 +30,6 @@ which can be done with `jq`:
 Create `.prettierrc.js`:
 
 ```js
-const prettierBase = require("eslint-config-ts-node-strict");
+const prettierBase = require("eslint-config-ts-node-strict/.prettierrc");
 module.exports = prettierBase;
 ```
